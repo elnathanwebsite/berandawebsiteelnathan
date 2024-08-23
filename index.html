@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda website ethan elnathan utama</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Style untuk video background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        /* Konten di atas video */
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        
+        /* Tombol Musik */
+        .music-control {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .music-control:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        /* Style Tombol Link */
+        .btn-link {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn-link:hover {
+            background-color: #e67e22;
+        }
+
+        /* Style Formulir Kirim Pesan */
+        .contact-form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto 0;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+        <source src="Video WhatsApp 2024-08-23 pukul 12.44.31_d15c09ff.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video tag.
+    </video>
+
+    <!-- Konten Website -->
+    <div class="content">
+        <!-- Navigasi -->
+        <nav>
+          
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h1>ETHAN EL NATHAN</h1>
+            <a href="https://www.instagram.com/elnathan1_?igsh=YzljYTk1ODg3Zg==" class="btn-link">INSTAGRAM</a> <!-- Tombol dengan Link -->
+            <a href="https://wa.me/qr/2NJZAKYTCNJRN1" class="btn-link">WhatsApp</a> <!-- Tombol dengan Link -->
+            <a href="https://shopee.co.id/shop/1119999704?tab=shop" class="btn-link">Shopee</a> <!-- Tombol dengan Link -->
+            <a href="https://elnathanshopinstagram.vercel.app/" class="btn-link">SHOP</a> <!-- Tombol dengan Link -->
+            <a href="https://www.tiktok.com/@elnatahanxyz_" class="btn-link">Tik Tok</a> <!-- Tombol dengan Link -->
+        </header>
+
+
+        <!-- Section Tentang Kami -->
+        <section class="about">
+            <h2>Tentang Kami</h2>
+            <p>We are Elnathan and a team of digital artists who bring extraordinary ideas to life through stunning graphic design. With a creative touch and meticulous attention to detail, we craft visuals that speak, inspire, and connect emotions with aesthetics. From standout brand identities to unique illustrations, every project we take on is a perfect blend of art and technology.
+
+                At Elnathan Studio, creativity knows no bounds. We believe that every design tells a story, and it is our mission to convey that story in the most beautiful and impactful way possible. With years of experience and a commitment to innovation, we strive to deliver results that exceed expectations—creating designs that are not just seen but felt..</p>
+        </section>
+
+        <!-- Section Layanan -->
+        <section class="services">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Website Development</li>
+                <li>Desain Grafis</li>
+                <li>Ilustrasi Dan Poster</li>
+                <li>Konten Digital</li>
+            </ul>
+        </section>
+    </div>
+   <!-- Footer dengan Formulir Kirim Pesan -->
+   <footer>
+    <h3>Kirim Pesan kepada Kami</h3>
+    <form class="contact-form" action="mailto:afansurifan@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+        <button type="">Kirim Pesan</button>
+    </form>
+    <p>&copy; ETHAN/ ARIFAN.</p>
+</footer>
+
+    <!-- Musik Latar -->
+    <audio id="background-music" loop>
+        <source src="NARUTO OST Main Theme (Trap Remix).mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Tombol Putar/Pause Musik -->
+    <div class="music-control" onclick="toggleMusic()">
+        <img id="music-icon" src="https://img.icons8.com/ios-filled/50/000000/play.png" alt="Tombol Putar/Pause" width="50">
+    </div>
+
+    <script>
+        let musicPlaying = false;
+        const music = document.getElementById("background-music");
+        const musicIcon = document.getElementById("music-icon");
+
+        function toggleMusic() {
+            if (musicPlaying) {
+                music.pause();
+                musicIcon.src = "https://img.icons8.com/ios-filled/50/000000/play.png"; // Ikon Play
+            } else {
+                music.play();
+                musicIcon.src = "https://img.icons8.com/ios-filled/50/000000/pause.png"; // Ikon Pause
+            }
+            musicPlaying = !musicPlaying;
+        }
+        
+    </script>
+
+</body>
+</html>
